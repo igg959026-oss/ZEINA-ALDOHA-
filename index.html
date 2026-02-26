@@ -7,19 +7,27 @@
 
 <style>
 body {
-    font-family: Arial;
-    background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
-    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
 }
 
 header {
-    background: black;
-    color: white;
-    padding: 20px;
-    font-size: 24px;
-    letter-spacing: 2px;
+    background: linear-gradient(to right, #000, #111);
+    padding: 25px;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: gold;
+    font-weight: bold;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 22px;
+    color: gold;
 }
 
 .products {
@@ -30,38 +38,56 @@ header {
 }
 
 .card {
-    background: white;
-    width: 260px;
-    margin: 15px;
+    background: #111;
+    width: 280px;
+    margin: 20px;
     padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255,215,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: gold;
 }
 
 .price {
-    color: green;
+    color: #00ff88;
     font-size: 18px;
     margin: 10px 0;
 }
 
 button {
-    background: black;
-    color: white;
+    background: gold;
+    color: black;
     border: none;
-    padding: 10px;
+    padding: 12px;
     width: 100%;
     cursor: pointer;
-    border-radius: 6px;
-    font-size: 15px;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
 button:hover {
-    background: #333;
+    background: #d4af37;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    margin-top: 40px;
+    font-size: 14px;
+    color: gray;
 }
 </style>
 </head>
@@ -72,13 +98,16 @@ button:hover {
 ZEINA ALDOHA
 </header>
 
+<div class="section-title">أحدث المنتجات</div>
+
 <div class="products">
 
 <div class="card">
 <img src="abaya1.jpg" alt="عباية">
 <h3>عباية سوداء فاخرة</h3>
+<p>كود المنتج: A001</p>
 <p class="price">140 ريال قطري</p>
-<a href="https://wa.me/97451397461?text=أرغب%20في%20طلب%20العباية%20السوداء">
+<a href="https://wa.me/97451397461?text=السلام%20عليكم%0Aأرغب%20في%20طلب%20هذه%20العباية%20الفاخرة.%0A%0Aاسم%20المنتج:%20عباية%20سوداء%20فاخرة%0Aكود%20المنتج:%20A001%0Aالسعر:%20140%20ريال%20قطري">
 <button>اطلب الآن عبر واتساب</button>
 </a>
 </div>
@@ -86,13 +115,149 @@ ZEINA ALDOHA
 <div class="card">
 <img src="abaya2.jpg" alt="عباية">
 <h3>عباية مطرزة أنيقة</h3>
+<p>كود المنتج: A002</p>
 <p class="price">160 ريال قطري</p>
-<a href="https://wa.me/97451397461?text=أرغب%20في%20طلب%20العباية%20المطرزة">
+<a href="https://wa.me/97451397461?text=السلام%20عليكم%0Aأرغب%20في%20طلب%20هذه%20العباية%20الفاخرة.%0A%0Aاسم%20المنتج:%20عباية%20مطرزة%20أنيقة%0Aكود%20المنتج:%20A002%0Aالسعر:%20160%20ريال%20قطري">
 <button>اطلب الآن عبر واتساب</button>
 </a>
 </div>
 
 </div>
 
+<footer>
+© 2026 ZEINA ALDOHA - جميع الحقوق محفوظة
+</footer>
+
 </body>
-  </html>
+</html><!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZEINA ALDOHA</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+header {
+    background: linear-gradient(to right, #000, #111);
+    padding: 25px;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: gold;
+    font-weight: bold;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 22px;
+    color: gold;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: #111;
+    width: 280px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255,215,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: gold;
+}
+
+.price {
+    color: #00ff88;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+button {
+    background: gold;
+    color: black;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #d4af37;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    margin-top: 40px;
+    font-size: 14px;
+    color: gray;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ZEINA ALDOHA
+</header>
+
+<div class="section-title">أحدث المنتجات</div>
+
+<div class="products">
+
+<div class="card">
+<img src="abaya1.jpg" alt="عباية">
+<h3>عباية سوداء فاخرة</h3>
+<p>كود المنتج: A001</p>
+<p class="price">140 ريال قطري</p>
+<a href="https://wa.me/974XXXXXXXX?text=السلام%20عليكم%0Aأرغب%20في%20طلب%20هذه%20العباية%20الفاخرة.%0A%0Aاسم%20المنتج:%20عباية%20سوداء%20فاخرة%0Aكود%20المنتج:%20A001%0Aالسعر:%20140%20ريال%20قطري">
+<button>اطلب الآن عبر واتساب</button>
+</a>
+</div>
+
+<div class="card">
+<img src="abaya2.jpg" alt="عباية">
+<h3>عباية مطرزة أنيقة</h3>
+<p>كود المنتج: A002</p>
+<p class="price">160 ريال قطري</p>
+<a href="https://wa.me/974XXXXXXXX?text=السلام%20عليكم%0Aأرغب%20في%20طلب%20هذه%20العباية%20الفاخرة.%0A%0Aاسم%20المنتج:%20عباية%20مطرزة%20أنيقة%0Aكود%20المنتج:%20A002%0Aالسعر:%20160%20ريال%20قطري">
+<button>اطلب الآن عبر واتساب</button>
+</a>
+</div>
+
+</div>
+
+<footer>
+© 2026 ZEINA ALDOHA - جميع الحقوق محفوظة
+</footer>
+
+</body>
+    </html>
